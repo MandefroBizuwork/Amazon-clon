@@ -1,0 +1,99 @@
+.ProductCard {
+  position: relative;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  width: 300px;
+  padding: 20px;
+  justify-items: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  
+}
+
+.ProductCard  img {
+
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  object-fit: contain;
+}
+
+.ProductCard:hover .buton {
+  display: block;
+}
+
+.buton {
+  display: none;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 30px;
+  bottom: 0;
+  padding: 12px 0;
+  left: 0;
+  background-color: var(--primary-color);
+  position: absolute;
+}
+.buton:hover {
+  background-color: var(--primary-shade);
+}
+
+.rating {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Product_container {
+  display: grid;
+  grid-template-columns: repeat(
+    5,
+    1fr
+  ); /* Adjust 200px to your desired minimum column size */
+  margin: 100px auto; /* Center horizontally */
+  justify-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 90%;
+}
+
+
+
+
+@media(max-width:600px){
+
+    .Product_container{  
+
+        display: grid;
+        grid-template-columns: repeat(
+          1,
+          1fr
+        ); /* Adjust 200px to your desired minimum column size */
+        margin: 100px auto; /* Center horizontally */
+        justify-items: center;
+        justify-content: center;
+        gap: 50px;
+     
+        }
+   }
+   
+   @media (min-width: 600px) and (max-width: 1000px){
+
+    .Product_container{  
+
+        display: grid;
+        grid-template-columns: repeat(
+          2,
+          1fr
+        ); /* Adjust 200px to your desired minimum column size */
+        margin: 100px auto; /* Center horizontally */
+        justify-items: center;
+        justify-content: center;
+        gap: 50px;
+     
+        }
+   }
