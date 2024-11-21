@@ -1,0 +1,190 @@
+.Product_container {
+  display: grid;
+  grid-template-columns: repeat(
+    5,
+    1fr
+  ); /* Adjust 200px to your desired minimum column size */
+  margin: 100px auto; /* Center horizontally */
+  justify-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+@media (max-width: 600px) {
+  .Product_container {
+    display: grid;
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Adjust 200px to your desired minimum column size */
+    margin: 100px auto; /* Center horizontally */
+    justify-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .Product_container {
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Adjust 200px to your desired minimum column size */
+    margin: 100px auto; /* Center horizontally */
+    justify-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+.ProductDeatilCard {
+  /* max-width: 500px;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);;
+      margin: 20px auto;
+      padding: 20px; */
+  box-shadow: none;
+  height: auto;
+  display: flex;
+  gap: 50px;
+  width: 100%;
+
+  padding: 20px;
+}
+.ProductDeatilCard img {
+  object-fit: contain;
+  max-width: 300px !important;
+  height: auto;
+}
+.ProductDeatilCard button {
+  background-color: rgb(224, 174, 26);
+  padding: 14px 50px;
+  border-radius: 50px;
+  width: auto;
+  cursor: pointer;
+  display: block;
+  position: static;
+  font-size: 20px;
+  font-weight: bold;
+}
+.ProductDeatilCard button:hover {
+  background-color: chocolate;
+}
+.ProductDeatilCard p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .ProductDeatilCard {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+ 
+  }
+  .ProductDeatilCard p, .ProductDeatilCard h1{
+    padding: 10px 30px ;
+ 
+  }
+}
+
+.removeButton {
+  background-color: #ff4d4f !important;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.removeButton:hover {
+  background-color: #9e797c;
+}
+
+
+
+
+
+.Cart_Section{
+display: flex;
+margin-top:20px;
+gap: 20px;
+
+
+}
+.Cart_container{
+padding: 20px;
+max-width:70%;
+
+
+}
+.Cart_container h2,h3 {
+  padding: 10px;
+  
+  
+  }
+.Cart_container hr{
+  margin: 10px;
+  
+  
+  }
+.cartSummary {
+  margin-top: 20px;
+  text-align: center;
+ color:black;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.checkoutButton {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: orange;
+color:black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.checkoutButton:hover {
+  background-color: orangered;
+  color: black;
+}
+
+.giftOption {
+  margin: 10px 0;
+}
+
+
+@media (max-width:700px){
+  .Cart_Section{
+    display: flex;
+    flex-direction: column;    
+    gap: 20px;
+    
+    }
+}
+.item_container{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.Changebtns{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.Changebtns svg{
+background:none;
+cursor: pointer;
+font-weight: bold;
+font-size: 30px;
+}
+
+.Changebtns svg:hover{
+  background-color: orange;
+  }

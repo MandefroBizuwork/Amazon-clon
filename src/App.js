@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+
+import MySlide from './components/Carasoulse/MySlide';
+import Category from './components/Category/Category';
+import Header from './components/Header/Header';
+import ProductList from './components/Products/ProductList';
+import './index.css'
+import PageRouting from './PageRouting';
+import LandingPage from './Pages/Landing/LandingPage';
+import "./bootstrap-5/css/bootstrap.min.css"
+import { store } from './components/UserCart/Store';
+import {Provider} from   'react-redux';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <Provider store={store}>
+
+   <PageRouting/>
+   </Provider>
+    
+     {/* <MySlide/>
+        <Category/>
+        <ProductList/> */}
+       
+  {/* <LandingPage/> */}
+
+ 
+    </>
   );
 }
 
